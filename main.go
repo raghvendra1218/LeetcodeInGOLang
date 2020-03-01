@@ -16,4 +16,8 @@ func main() {
 	//Minimum Path Sum
 	grid := [][]int{{1, 3, 1}, {1, 5, 1}, {4, 2, 1}}
 	fmt.Println("Minimum path sum: ", minPathSum(grid))
+
+	//Single Number
+	nums := []int{4, 1, 2, 1, 2}
+	fmt.Println("Single Number in given Array: ", singleNumber(nums))
 }
