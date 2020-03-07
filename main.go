@@ -20,4 +20,8 @@ func main() {
 	//Single Number
 	nums := []int{4, 1, 2, 1, 2}
 	fmt.Println("Single Number in given Array: ", singleNumber(nums))
+
+	//Happy Number
+	number := 19
+	fmt.Println("Is Happy Number: ", isHappy(number))
 }
