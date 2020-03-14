@@ -1,6 +1,8 @@
 package main
 
-func isSubtree(s *TreeNode, t *TreeNode) bool {
+import "LeetcodeInGOLang/utils"
+
+func isSubtree(s *utils.TreeNode, t *utils.TreeNode) bool {
 	if s == nil {
 		return false
 	}
@@ -13,7 +15,7 @@ func isSubtree(s *TreeNode, t *TreeNode) bool {
 	return isSubtree(s.Left, t) || isSubtree(s.Right, t)
 }
 
-func isSame(s *TreeNode, t *TreeNode) bool {
+func isSame(s *utils.TreeNode, t *utils.TreeNode) bool {
 	if s == nil && t == nil {
 		return true
 	}

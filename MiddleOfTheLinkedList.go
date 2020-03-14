@@ -1,6 +1,8 @@
 package main
 
-func middleNode(head *ListNode) *ListNode {
+import "LeetcodeInGOLang/utils"
+
+func middleNode(head *utils.ListNode) *utils.ListNode {
 	slow, fast := head, head
 	for fast != nil && fast.Next != nil {
 		slow = slow.Next
