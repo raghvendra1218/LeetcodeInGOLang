@@ -16,7 +16,7 @@ func numIslands(grid [][]byte) int {
 
 func traversegrid(grid [][]byte, row, col int) {
 
-	//Boundary conditions or the case when current grid's position is zero
+	//Boundary conditions or the case when value at grid's current position is zero
 	if row < 0 || col < 0 || row >= len(grid) || col >= len(grid[0]) || grid[row][col] == '0' {
 		return
 	}
