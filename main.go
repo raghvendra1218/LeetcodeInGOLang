@@ -5,9 +5,15 @@ import (
 )
 
 func main() {
+	//Valid Parenthesis String
 	s := "(*)"
 	fmt.Println("is valid string: ", checkValidString(s))
-	//time.Sleep(1 * time.Second)
-	grid := [][]byte{{'1', '1', '1', '1', '0'}, {'1', '1', '0', '1', '0'}, {'1', '1', '0', '0', '0'}, {'0', '0', '0', '0', '0'}}
-	fmt.Println("Number of Islands: ", numIslands(grid))
+
+	//Number of Islands
+	island := [][]byte{{'1', '1', '1', '1', '0'}, {'1', '1', '0', '1', '0'}, {'1', '1', '0', '0', '0'}, {'0', '0', '0', '0', '0'}}
+	fmt.Println("Number of Islands: ", numIslands(island))
+
+	//Minimum Path Sum
+	grid := [][]int{{1, 3, 1}, {1, 5, 1}, {4, 2, 1}}
+	fmt.Println("Minimum path sum: ", minPathSum(grid))
 }
