@@ -26,18 +26,15 @@ func (s *set) Contains(value int) bool {
 }
 
 func isHappy(n int) bool {
-	if n == 1 {
-		return true
-	}
 	set := NewSet()
 	for {
+		if n == 1 {
+			return true
+		}
 		set.Add(n)
 		n = sumOfSquaredDigits(n)
 		if set.Contains(n) {
 			return false
-		}
-		if n == 1 {
-			return true
 		}
 	}
 }
